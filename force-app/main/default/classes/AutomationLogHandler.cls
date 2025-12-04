@@ -45,7 +45,7 @@ public class AutomationLogHandler {
          */
         public LogBuilder setEndpoint(String endpoint) {
             this.log.HTTP_Endpoint__c = endpoint;
-            return this;
+            return this; 
         }
         
         /**
@@ -137,7 +137,7 @@ public class AutomationLogHandler {
         }
         
         /**
-         * @description Builds and inserts the log record asynchronously
+         * @description Builds and insert the log record asynchronously
          */
         public void saveAsync() {
             AutomationLogHandler.insertLogAsync(this.log);
